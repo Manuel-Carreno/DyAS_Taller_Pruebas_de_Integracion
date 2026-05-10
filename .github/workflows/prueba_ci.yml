@@ -19,7 +19,7 @@ jobs:
       run: mvn clean verify -f registraduria/pom.xml
 
     - name: Publicar reporte JaCoCo
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: jacoco-report
         path: registraduria/target/site/jacoco/
